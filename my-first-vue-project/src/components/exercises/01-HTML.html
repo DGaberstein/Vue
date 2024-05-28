@@ -1,0 +1,17 @@
+<template>
+    <div>
+      <h1>Biography</h1>
+      <p><strong>Age:</strong> {{ age }}</p>
+      <p><strong>Date of Birth:</strong> {{ dob }}</p>
+      <p><strong>Location of Birth:</strong> {{ birthLocation }}</p>
+      <p><strong>Current Location:</strong> {{ currentLocation }}</p>
+      <p><strong>Favorite Foods:</strong> {{ favoriteFoods.join(', ') }}</p>
+      <p><strong>Favorite Movies:</strong></p>
+      <ul>
+        <li><strong>Action:</strong> {{ favoriteMovies.action }}</li>
+        <li><strong>Drama:</strong> {{ favoriteMovies.drama }}</li>
+        <li><strong>Comedy:</strong> {{ favoriteMovies.comedy }}</li>
+      </ul>
+    </div>
+  </template>
+  
