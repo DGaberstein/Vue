@@ -50,17 +50,17 @@ Create a component andd. store this info aduse the v-for directive to loop throu
 import { reactive } from 'vue';
 
 const person = reactive({
-  name: "John Doe",
-  age: 30,
-  favoriteMusicBands: ["Nirvana", "The Beatles", "Led Zeppelin"],
+  name: "Daniel Gaberstein",
+  age: 26,
+  favoriteMusicBands: ["Cream", "Genesis", "Led Zeppelin"],
   additionalInfo: {
-    favoriteColor: "Blue",
+    favoriteColor: "Green",
     hobby: "Reading",
-    country: "USA"
+    country: "Germany"
   },
   favoritePizzaType: "Pepperoni",
-  favoriteDrinks: ["Coke", "Pepsi", "Water"],
-  favoriteBurgerTypes: ["Cheeseburger", "Veggie Burger", "Bacon Burger"]
+  favoriteDrinks: ["Coke", "Japan Sport Water", "Water"],
+  favoriteBurgerTypes: ["Cheeseburger", "Chicken Burger", "Bacon Burger"]
 });
 </script>
 
