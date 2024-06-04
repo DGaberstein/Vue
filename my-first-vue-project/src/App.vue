@@ -1,19 +1,45 @@
+<!-- This File is the top-level file of your app -->
+<!-- A good convention is to always use the naming-convention called PascalCase convention -->
+
+<!-- The 3 TAGS
+Any Vue file contains these 3 tags! -->
+
+<!-- Script Tag is where we write our javascript, also thiss tag iss where we will be importing other tags, other files -->
+
+<!-- The Template Tag - this tag serves to innyect/use/apply any html elements that you already know -->
+
+<!-- The Style Tag - is the tag that we use to pass any CSS to the file! -->
+
+<!-- This is where you inyect Javscript -->
 <script setup>
-import HelloWorld from './components/HelloWorld.vue'
+// import HelloWorld from "./components/HelloWorld.vue";
+import FirstComp from "./components/vue-basics/01-FirstComp.vue";
+import FirstReactiveComp from "./components/vue-basics/02-FirstReactiveComp.vue";
 </script>
 
+<!-- This is where you write your HTML -->
 <template>
   <div>
-    <a href="https://vitejs.dev" target="_blank">
-      <img src="/vite.svg" class="logo" alt="Vite logo" />
-    </a>
-    <a href="https://vuejs.org/" target="_blank">
-      <img src="./assets/vue.svg" class="logo vue" alt="Vue logo" />
-    </a>
+    <h1>Leaarning Vue.js</h1>
   </div>
-  <HelloWorld msg="Vite + Vue" />
+  <!-- Coomps Here -->
+  <div class="border">
+    <FirstReactiveComp />
+  </div>
+
+  <!-- Uncomment Here to see in order -->
+  <!-- 1 -->
+  <!-- <FirstComp /> -->
+  <!-- 2 -->
+
+  <!-- This is how a Vue component is applied inside the template(html) tag -->
+  <!-- By nature, they are self-closing -->
+  <!-- Let's uncomment when we get to props -->
+  <!-- <HelloWorld msg="Hello Students" /> -->
 </template>
 
+<!-- This is where you write CSS Specific to this file -->
+<!-- The 'scoped' attribute when placed inside the opening style tag of any .vue file means that style will be applied **only** to the elements inside the same file -->
 <style scoped>
 .logo {
   height: 6em;
